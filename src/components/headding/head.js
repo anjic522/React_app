@@ -1,6 +1,7 @@
-const First=()=>{
+const First=(prop)=>{
+    const {title="default" } = prop;
     return(
-        <h1>head1</h1>
+        <h1>{title}</h1>
     )
 }
 export default First;
