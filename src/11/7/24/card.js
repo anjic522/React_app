@@ -1,5 +1,4 @@
-
-const Data = [
+const Dataobjects = [
     {
         team : "royal challenges banglore",
         cups : 0,
@@ -30,22 +29,7 @@ const Data = [
     jerseyimg : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYb1zMpzFMI5K-yKFjDORQpliGHhxMooW94Q&s",
     players : 11,
     runners : 3
-    },
-    {
-        team : "gujarath titans",
-        cups : 12,
-        jerseyimg : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9PJlByzj1AjgesZTFn-YDrN7xF3djGS2eJg&s",
-        players : 10,
-        runners : 3
-        },
-        {
-            team : "sunrisers",
-            cups : 5,
-            jerseyimg : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ksxlmJyf7whK0eqivqZfyyTcOnEsAfsYPw&s",
-            players : 11,
-            runners : 4
-            },
-
+    }
     ]
     
-    export default Data;
+    export default Dataobjects;

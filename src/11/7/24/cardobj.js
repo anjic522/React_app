@@ -1,5 +1,4 @@
-
-const Data = [
+const Objdata = [
     {
         team : "royal challenges banglore",
         cups : 0,
@@ -48,4 +47,4 @@ const Data = [
 
     ]
     
-    export default Data;
+    export default Objdata;

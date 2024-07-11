@@ -1,0 +1,44 @@
+.navbar{
+    height: 80px;
+    width:100%;
+    background-color: rgb(52, 51, 51);
+    display: flex;
+    gap: 200px;
+    font-size: 20px;
+    color: aqua;
+    position: relative;
+    top: 0px;
+    position: fixed;
+box-shadow: 5px 10px 15px brown;
+}
+.iplcards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+
+} 
+.img{
+    justify-items: center;
+align-content: center;
+
+}
+.cars{
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 5px 10px 15px brown;
+
+
+
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: chocolate;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(51, 0, 255);
+}
