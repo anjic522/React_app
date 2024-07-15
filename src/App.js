@@ -1,58 +1,68 @@
 import logo from './logo.svg';
 import './App.css';
-import Cname from './components/sample';
 
-import { Image } from './11/7/24/card 2file';
-import Dataobjects from './11/7/24/card';
-import { Heading } from './11/7/24/card 2file';
-import { Headding2 } from './11/7/24/card 2file';
-import { Headding3 } from './11/7/24/card 2file';
-import { Headding4 } from './11/7/24/card 2file';
-import Objdata from './11/7/24/cardobj';
-import "./style.css"
+import { Compo } from './12.7.24/card';
+import "./card.css"
+import BasicExample from './12.7.24/boot';
+import Customprogresbar from './12.7.24/progbar';
+
+import Custom from './13.7.24/customlist';
+import First from './components/headding/head';
+import { Food } from './13.7.24/list';
+import "./date13.7.css";
+
+
+
+
+
+
+
+
+const students=["anji","gonachakrala","narendra","chalapathi","kiran","pavan"];
+
+const veg=["brinjal","tomato","onion","potato","ladysfinger","cauliflower"];
+const scientist=["kalam","einsteen","thomas","ramanjan"];
+
+
+
+const Item="biryani";
+const Ingredients=["water","rice","oil","vegetables","dryfruits"]
+const Instructions=["first go to kitchen","on the stove","lid a stove","place a pan ","make biryani","eat well","keep smile","have a good day"]
+
+
 function App() {
-  return (
-    <div> 
-      <div className='navbar'> 
-<p>HOME</p>
-<p>IPL</p>
-<p>PLAYERS</p>
-<p>RUNNERS</p>
-<p>ABOUT</p>
-<p>SPORTS</p>
 
 
+return(
+  <div>
+    <Compo/>
+  </div>
 
 
-      </div>
-      <div className='iplcards'>
+//   <div>
+//     <First title={"fruits"}></First>
+//     <Custom list={["apple","banana","guva","grapes","apple","banana","guva","grapes"]}></Custom>
+//     <First title={"students"}></First>
+//     <Custom list={students}></Custom>
+//     <First title={'veg'}></First>
+//     <Custom list={veg}></Custom>
+//     <First title={'scientist'}></First>
+//     <Custom list={scientist}></Custom>
+//     <First title={Item}></First>
+//     <First title={"ingredients to make a "+Item}></First>
+// <Custom list={Ingredients}></Custom>
+//     <First title={"instructions to prapare a "+Item}></First>
+//     <Custom list={Instructions}></Custom>
+// <Food></Food>
 
-{
-  Objdata.map((eachdata)=>(
-    <div key={eachdata.team} className='cars'>
-<Heading title={eachdata.team}/>
-<Image html={eachdata.jerseyimg} css="image" js={200} react={200}/>a
-<Headding2 cups={eachdata.cups}/>
-<Headding3 players={eachdata.players}/>
-<Headding4 runners={eachdata.runners}/>
-
-
-      </div>
-
-  ))
-}
-
-</div>
-
-
-<div className='footer'>
-  <p> About Ipl Match</p>
-
-</div>
-
-    </div>
-  )
     
+
+//   </div>
+
+// ) 
+
+)
+
 }
 
 export default App;

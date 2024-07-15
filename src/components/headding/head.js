@@ -1,5 +1,5 @@
-const First=(prop)=>{
-    const {title="default" } = prop;
+const First = (prop)=>{
+    const {title ="default" } = prop;
     return(
         <h1>{title}</h1>
     )
