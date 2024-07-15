@@ -1,10 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// // import './App.css';
 
-import { Compo } from './12.7.24/card';
-import "./card.css"
-import BasicExample from './12.7.24/boot';
-import Customprogresbar from './12.7.24/progbar';
+// import { Compo } from './12.7.24/card';
+// // import "./card.css"
+// import BasicExample from './12.7.24/boot';
+// import Customprogresbar from './12.7.24/progbar';
 
 import Custom from './13.7.24/customlist';
 import First from './components/headding/head';
@@ -34,34 +34,32 @@ function App() {
 
 
 return(
+ 
+
   <div>
-    <Compo/>
-  </div>
+    <First title={"fruits"}></First>
+    <Custom list={["apple","banana","guva","grapes","apple","banana","guva","grapes"]}></Custom>
+    <First title={"students"}></First>
+    <Custom list={students}></Custom>
+    <First title={'veg'}></First>
+    <Custom list={veg}></Custom>
+    <First title={'scientist'}></First>
+    <Custom list={scientist}></Custom>
+    <First title={Item}></First>
+    <First title={"ingredients to make a "+Item}></First>
+<Custom list={Ingredients}></Custom>
+    <First title={"instructions to prapare a "+Item}></First>
+    <Custom list={Instructions}></Custom>
 
-
-//   <div>
-//     <First title={"fruits"}></First>
-//     <Custom list={["apple","banana","guva","grapes","apple","banana","guva","grapes"]}></Custom>
-//     <First title={"students"}></First>
-//     <Custom list={students}></Custom>
-//     <First title={'veg'}></First>
-//     <Custom list={veg}></Custom>
-//     <First title={'scientist'}></First>
-//     <Custom list={scientist}></Custom>
-//     <First title={Item}></First>
-//     <First title={"ingredients to make a "+Item}></First>
-// <Custom list={Ingredients}></Custom>
-//     <First title={"instructions to prapare a "+Item}></First>
-//     <Custom list={Instructions}></Custom>
-// <Food></Food>
+<Food></Food>
 
     
 
-//   </div>
+  </div>
 
-// ) 
+) 
 
-)
+
 
 }
 

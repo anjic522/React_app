@@ -184,9 +184,9 @@ export const Food=()=>{
         {
         Foodtwo.map((eachfood)=>(
       
-          <div  key={eachfood.name}className="imag2">
+          <div  key={eachfood.name} className="imag2">
          
-      <img src={eachfood.image} alt={eachfood.name} width={225} height={200} className="card-image"/>
+      <img src={eachfood.image} alt={eachfood.name} width={325} height={300} className="card-image"/>
       
             <p className="card-title2">ingredients={eachfood.ingredients}</p>
             <p className="card-price2">instructions= {eachfood.instructions}</p>
