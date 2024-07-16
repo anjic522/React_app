@@ -1,5 +1,5 @@
-// import logo from './logo.svg';
-// // import './App.css';
+import logo from './logo.svg';
+import './App.css';
 
 // import { Compo } from './12.7.24/card';
 // // import "./card.css"
@@ -48,8 +48,9 @@ return(
     <First title={Item}></First>
     <First title={"ingredients to make a "+Item}></First>
 <Custom list={Ingredients}></Custom>
-    <First title={"instructions to prapare a "+Item}></First>
+    <First title={"instructions to prepare a "+Item}></First>
     <Custom list={Instructions}></Custom>
+    
 
 <Food></Food>
 
