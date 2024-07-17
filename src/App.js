@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
-// import { Compo } from './12.7.24/card';
-// // import "./card.css"
-// import BasicExample from './12.7.24/boot';
-// import Customprogresbar from './12.7.24/progbar';
+import { Compo } from './12.7.24/card';
+// import "./card.css"
+import BasicExample from './12.7.24/boot';
+import Customprogresbar from './12.7.24/progbar';
 
 import Custom from './13.7.24/customlist';
 import First from './components/headding/head';
 import { Food } from './13.7.24/list';
 import "./date13.7.css";
+import Counter from './react160724/counter.js';
 
 
 
@@ -54,7 +55,7 @@ return(
 
 <Food></Food>
 
-    
+    <Counter></Counter>
 
   </div>
 
