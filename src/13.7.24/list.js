@@ -194,10 +194,7 @@ export const Food=()=>{
             <p className="card-category2">rating= {eachfood.rating}    
           </p>
           <p className="card-category2">reviewCount= {eachfood.reviewCount}</p>
-      
-      
-      
-            
+          
       
       </div>
         ))
