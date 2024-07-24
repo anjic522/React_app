@@ -1,0 +1,15 @@
+  .child {
+    border: 1px solid #492b2b;
+    border-radius: 8px;
+    padding: 16px;
+    width: 350px;
+    margin: 16px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+  .parent{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+  }
+   

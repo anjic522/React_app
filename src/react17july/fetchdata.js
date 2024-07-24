@@ -1,9 +1,9 @@
 import axios from "axios";
 import { Component } from "react";
-import "./sample.css";
+import "./fetchdata.css";
 import Table from 'react-bootstrap/Table';
 
-class SampleComponent extends Component{
+class SampleComponentthree extends Component{
     state={
         products:[],
         error:false
@@ -15,10 +15,10 @@ class SampleComponent extends Component{
     // }
 
     fetchData=async()=>{
-        const response= await axios.get("https://fakestoreapi.com/products")
+        const response= await axios.get("https://dummyjson.com/recipes")
         if(response.status===200){
             this.setState({
-                products:response.data
+                products:response.data.recipes
             })
             // console.log(response.data)
         }
@@ -43,10 +43,10 @@ class SampleComponent extends Component{
                 {
                     // this.state.error ? <h1>Something went wrong</h1> :console.log(this.state.products)
                    this.state.products.map((totaldata)=>(
-                        <div key={totaldata.name} className="child">
+                        <div key={totaldata.id} className="child">
                           <img src={totaldata.image} alt={totaldata.name} width={325} height={300}></img>
-                           <p className="">Tittle:{totaldata.title}</p>
-                           <p className="">price:{totaldata.price}</p>
+                           <p className="">{totaldata.name}</p>
+                           <p className="">difficulty:{totaldata.difficulty}</p>
 
                             </div>  
 
@@ -57,4 +57,4 @@ class SampleComponent extends Component{
         )
     }
 }
-export default SampleComponent;
+export default SampleComponentthree;
