@@ -1,6 +1,6 @@
 import BasicExample from "./boot"
 import Customprogresbar from "./progbar"
-// import "./card.css";
+import "./card.css";
 
    export const  Compo=()=>{
 const  product=[

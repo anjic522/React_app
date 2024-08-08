@@ -1,0 +1,78 @@
+
+/* to  stay the current screen active*/
+.active{
+    color:crimson;
+}
+.nav-item{
+    font-size: 25px;
+    margin-top: 15px;
+
+
+}
+.navbar-nav{
+    height: 65px;
+    width: 100%;
+}
+.child {
+    border: 1px solid #492b2b;
+    border-radius: 8px;
+    padding: 16px;
+    width: 350px;
+    margin: 16px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+
+  }
+  .parent{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+
+  }
+  .single-card{
+    display: grid;
+    grid-template-columns: auto  ;
+    border: 2px solid #492b2b;
+    border-radius: 8px;
+    padding: 16px;
+    width: 350px;
+    margin: 16px auto;
+    /* box-shadow: 10 12px 18px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    background-color: burlywood;
+
+  }
+  .button{
+    border-radius: 30px;
+    text-decoration: none;
+    height: 50px;
+    width: 100px;
+    background-color:darkgoldenrod;
+    font-size: 20px;
+
+  }
+   .dropdown{
+    border: 2px solid black;
+    width: 550px;
+    height: 450px;
+    /* overflow:scroll; */
+    text-align: center;
+    margin-left: 400px;
+    
+    
+   }
+
+   .dropdown , img{
+    border-radius: 50px;
+   }
+   .buttontwo  {
+    height: 50px;
+    width: 100px;
+margin-right: 20px;
+    border-radius: 20px;
+   }
+   .buttonthree  {
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+   }

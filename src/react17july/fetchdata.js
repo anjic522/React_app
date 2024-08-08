@@ -47,7 +47,7 @@ class SampleComponentthree extends Component{
                           <img src={totaldata.image} alt={totaldata.name} width={325} height={300}></img>
                            <p className="">{totaldata.name}</p>
                            <p className="">difficulty:{totaldata.difficulty}</p>
-
+                             <button> see more</button>
                             </div>  
 
                     ))
