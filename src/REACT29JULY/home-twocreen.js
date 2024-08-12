@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import { Recipecontext } from "./navigation";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import UncontrolledExample from "./corousal";
 
 const Newhomescreen = () => {
     const {  addfavouritedishhaHandler } = useContext(Recipecontext);
@@ -17,7 +18,7 @@ const Newhomescreen = () => {
             if (status === 200) {
                 const updatedData = data.recipes.map((uni) => ({
                     ...uni,
-                    existinfavourite: false
+                    isexists: false
                 }));
                 setResults(updatedData);
             }
@@ -40,7 +41,7 @@ const Newhomescreen = () => {
     const addfoodhandler = (eachfood) => {
         addfavouritedishhaHandler(eachfood);
         setResults(results.map(recipe =>
-            recipe.id === eachfood.id ? { ...recipe, existinfavourite: true } : recipe
+            recipe.id === eachfood.id ? { ...recipe, isexists: true } : recipe
         ));
     }
 
@@ -55,8 +56,10 @@ const Newhomescreen = () => {
     return (
         <>
             <Navbar />
+            <UncontrolledExample/>
             <center>
                 <input
+                className="search-box"
                     type="text"
                     placeholder="Search"
                     value={search}
@@ -71,12 +74,12 @@ const Newhomescreen = () => {
                 {results.map((each) => (
                     <div className="child" key={each.id}>
                         <h4>{each.name}</h4>
-                        <img src={each.image} width={330} height={200} alt={each.name} />
+                        <img src={each.image} width={330} height={270} alt={each.name} className="image-style"/>
 
 
                         <button className="buttontwo" onClick={() => goToViewMore(each.id)}>View More</button>
 
-                        {each.existinfavourite ? (
+                        {each.isexists ? (
                             <button onClick={() => gotofavouritehandler(each)} className="buttonthree">Go to Favourite</button>
                         ) : (
                             <button onClick={() => addfoodhandler(each)} className="buttonthree">Add Food</button>

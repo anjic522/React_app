@@ -38,7 +38,7 @@ const Navigationstack = () => {
 
 
             const newdata = data.recipes.map((eachdata) => {
-                return { ...eachdata, existinfavourite: false }
+                return { ...eachdata, isexists: false }
             })
             if (status === 200) {
                 console.log(data)
@@ -56,15 +56,15 @@ const Navigationstack = () => {
 
         const recipeexist = favouritedish.find((eachfood) => eachfood.id === newdish.id);
 
-        const newrecipelist = recipelisttwo.map((eachrecipes) => {
-            if (eachrecipes.id === newdish.id) {
-                return { ...eachrecipes, existinfavourite: true }
-            }
-            else {
-                return eachrecipes
-            }
-        })
-        setrecipelist(newrecipelist)
+        // const newrecipelist = recipelisttwo.map((eachrecipes) => {
+        //     if (eachrecipes.id === newdish.id) {
+        //         return { ...eachrecipes, isexists: true }
+        //     }
+        //     else {
+        //         return eachrecipes
+        //     }
+        // })
+        // setrecipelist(newrecipelist)
 
 
         if (recipeexist) {
@@ -98,15 +98,18 @@ const Navigationstack = () => {
             removefromfavourite: removefromfavourite
 
         }}>
+            {
+                console.log(favouritedish)
+            }
             <BrowserRouter>
                 <Routes>
                     {/* static routes */}
-                    <Route path="/" element={<Homescreen />} />
+                    {/* <Route path="/" element={<Homescreen />} /> */}
                     <Route path="/new" element={<Newhomescreen />} />
 
-                    <Route path="/about" element={<Aboutcreen />} />
-                    <Route path="/setting" element={<Settingscreen />} />
-                    <Route path="/blog" element={<Blogscreen />} />
+                    {/* <Route path="/about" element={<Aboutcreen />} /> */}
+                    {/* <Route path="/setting" element={<Settingscreen />} /> */}
+                    {/* <Route path="/blog" element={<Blogscreen />} /> */}
                     <Route path="/*" element={<Inavalid />}></Route>
                     
 

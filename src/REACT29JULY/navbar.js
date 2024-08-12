@@ -13,29 +13,29 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-sm bg-light navbar-dark">
         <div className="container-fluid">
           <ul className="navbar-nav">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink to={"/"} style={linkstyle}>HOME</NavLink>
             </li>
             <li className="nav-item">
               <NavLink to={"/about"} style={linkstyle}>MENU</NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <NavLink to={"/new"} style={linkstyle}>NEWHOME</NavLink>
+              <NavLink to={"/new"} style={linkstyle}><i>HOME</i></NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink to={"/setting"} style={linkstyle}>LOCATION</NavLink>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            {/* <li className="nav-item">
               <NavLink to={"/blog"} style={linkstyle}>REGISTRATION</NavLink>
+            </li> */}
+            <li className="nav-item">
+              <NavLink to={"/recipe"} style={linkstyle}><i>RECIPES</i></NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to={"/recipe"} style={linkstyle}>RECIPES</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to={"/favourite"} style={linkstyle}> FAVOURITE RECIPES  {favouritedish.length}</NavLink>
+              <NavLink to={"/favourite"} style={linkstyle}> <i>FAVOURITE RECIPES</i>  {favouritedish.length}</NavLink>
             </li>
           </ul>
         </div>

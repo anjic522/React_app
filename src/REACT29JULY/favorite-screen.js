@@ -4,7 +4,7 @@ import { Recipecontext } from "./navigation";
 
 function FavoriteScreen(){
     const {favouritedish,removefromfavourite}=useContext(Recipecontext)
-
+    console.log(favouritedish,"favorites")
     const removehandler=(eachfood)=>{
         removefromfavourite(eachfood.id)
          
@@ -22,10 +22,12 @@ function FavoriteScreen(){
         return(
             <div className="child">
                 <h4>{each.name}</h4>
-                <img src={each.image} width={330} height={190}/>
-                <h4>Ingredients:{each.ingredients}</h4>
-                   <h4>Cuisine:{each.cuisine}</h4>
-                   <h4>Rating:{each.rating}</h4>
+                <img src={each.image} width={330} height={190}  className="image-style"/>
+                <p>Ingredients:{each.ingredients}</p>
+                   <p>Cuisine:{each.cuisine}</p>
+                   <p>Rating:{each.rating}</p>
+                   <p>Instructions:{each.instructions}</p>
+                   <p>prepTimeMinutes:{each.prepTimeMinutes}</p>
                 <button onClick={()=>removehandler(each)} className="buttontwo">Remove</button>
             </div>
         )

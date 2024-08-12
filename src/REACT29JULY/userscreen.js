@@ -21,29 +21,27 @@ const Recipescreen = () => {
     const fetcheachproduct = async (recipesid) => {
         try {
             const { data,status } = await axios.get(`https://dummyjson.com/recipes/${recipesid}`)
+
             if(status === 200)
             {
-                const updatedData = data.recipes.map((uni) => ({
-                    ...uni,
-                    existinfavourite: !false
-                }));
-                setRecipe(updatedData);
+                const updata={...data,isexists:false}
+                setRecipe(updata)
+                console.log(data,"data")
+                console.log(updata,"updata")
+
             }
         }
         catch (e) {
             console.log(e)
-
         }
 
     }
 
-console.log(recipe)
+
 
 const addfoodhandler = (eachfood) => {
     addfavouritedishhaHandler(eachfood);
-    setRecipe(recipe.map(recipe =>
-        ({ ...recipe, existinfavourite: true } )
-    ));
+    setRecipe({...recipe,isexists:true})
 }
 const gotofavouritehandler = () => {
     navigate("/favourite");
@@ -51,19 +49,20 @@ const gotofavouritehandler = () => {
     return (
         <>
             <Navbar />
-
             {
                 Object.keys(recipe).length > 0 ? (
                     <div className="single-card">
-                        <img src={recipe.image} width={300} height={200} />
+                        <img src={recipe.image} width={300} height={200} lassName="image-style"/>
                         <h5>Name:{recipe.name}</h5>
-                        <h5>Rating:{recipe.rating}</h5>
-                        <h5>Cuisine:{recipe.cuisine}</h5>
-                        <h5>Ingridients:{recipe.ingredients}</h5>
-                        {recipe.existinfavourite ? (
-                            <button onClick={() => gotofavouritehandler} className="buttonthree">Go to Favourite</button>
+                        <p>Rating:{recipe.rating}</p>
+                        <p>Cuisine:{recipe.cuisine}</p>
+                        <p>Ingridients:{recipe.ingredients}</p>
+                        <p>Instructions:{recipe.instructions}</p>
+                        <p>prepTimeMinutes:{recipe.prepTimeMinutes}</p>
+                        {recipe.isexists ? (
+                            <button onClick={() => gotofavouritehandler()} className="buttonthree">Go to Favourite</button>
                         ) : (
-                            <button onClick={() => addfoodhandler(recipe.id)} className="buttonthree">Add Food</button>
+                            <button onClick={() => addfoodhandler(recipe)} className="buttonthree">Add Food</button>
                         )}
                         </div>
                         
