@@ -17,20 +17,26 @@ import './App.css';
 // import Mounting from './react19july/mounting';
 // import Rough from './react19july/roughmounting';
 // import Update from './react19july/updatingphase';
-// import Uncontolforms from './react25july/uncontrolforms';
 // import Navigationstack from './REACT29JULY/navigation';
 // import Userscreen from './REACT29JULY/userscreen';
 // import Findrecipes from './REACT29JULY/dropdown';
 // import Products from './react 8th-aug-tableproducts/productcards';
 // import Searchfunctionality from './REACT29JULY/searchfunction';
-import WhetherApi from './react-24th-july/weatherceation';
+// import WhetherApi from './react-24th-july/weatherceation';
+
+// import ControlForm from './react-25-july/forms';
+// import Registration from './react-25-july/formregistration';
+import Fieldvalidations from './react-26-july/fieldvalidations';
 function App (){
 
 return(
 
   <div>
 
-<WhetherApi/>
+    <Fieldvalidations/>
+    {/* <Registration/> */}
+  {/* <ControlForm/> */}
+{/* <WhetherApi/> */}
 {/* <RecipeTable/> */}
 
     {/* <Products/> */}
@@ -42,7 +48,6 @@ return(
  {/* <Searchfunctionality/> */}
 
   
-    {/* <Uncontolforms/> */}
 {/* <Update/> */}
 {/* <Rough textcolor={"green"}/> */}
     {/* <Mounting   tocolor={"blue"}/> */}
