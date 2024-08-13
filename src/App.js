@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+// import RecipeTable from './react-23rd-july/tabletask';
 
 
 // import SampleComponent from "./SAMPLE.js";
@@ -8,7 +9,7 @@ import './App.css';
 
 
 // import SampleComponentthree from './react17july/fetchdata';
-import Placeholder from './react22july/placeholder';
+// import Placeholder from './react22july/placeholder';
 // import Hook from './react23july/hookdata';
 // import Example from './react23july/hook1';
 // import Hooktwo from './react23july/hook2';
@@ -21,15 +22,16 @@ import Placeholder from './react22july/placeholder';
 // import Userscreen from './REACT29JULY/userscreen';
 // import Findrecipes from './REACT29JULY/dropdown';
 // import Products from './react 8th-aug-tableproducts/productcards';
-import Searchfunctionality from './REACT29JULY/searchfunction';
+// import Searchfunctionality from './REACT29JULY/searchfunction';
+import WhetherApi from './react-24th-july/weatherceation';
 function App (){
 
 return(
 
   <div>
 
-
-
+<WhetherApi/>
+{/* <RecipeTable/> */}
 
     {/* <Products/> */}
     {/* <Userscreen/> */}
@@ -49,7 +51,7 @@ return(
     {/* <Example/> */}
    {/* <Hook/> */}
     {/* <SampleComponentthree/>  */}
-    <Placeholder/>
+    {/* <Placeholder/> */}
    
    </div>
 
